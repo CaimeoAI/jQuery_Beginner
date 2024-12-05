@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hideFirstParagraph").click(function(){
+                $("#firstParagraph").hide()
+            });
+            $(".hideSecondParagraph").click(function(){
+                $(".secondParagraph").hide()
+            });
+            $("#toggleThirdParagraph").click(function(){
+                $("#thirdParagraph").toggle("swing")
+            });
+
+            $("#sliderButton").click(function(){
+                $("#sliderDiv").slideToggle("fast")
+            });
+            $("#animateButtonLeft").click(function(){
+                $("#animateDiv").animate({left: '0px'})
+            });
+            $("#animateButtonSmall").click(function(){
+                $("#animateDiv").animate({
+                    height: '150px',
+                    width: '100px',
+                })
+            });
+            $("#animateButtonBig").click(function(){
+                $("#animateDiv").animate({
+                    height: '350px',
+                    width: '300px'
+                })
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="divOne">
+        <h1>Hide/Toggle Demonstration</h1>
+        <button id="hideFirstParagraph">HIDE</button>
+        <div id="firstParagraph">
+            <p>This text will be hidden when you press the buttton</p>
+        </div>
+        <button class="hideSecondParagraph">HIDE</button>
+        <div class="secondParagraph">
+            <p>This text will be hidden when you press the buttton</p>
+        </div>
+        <button id="toggleThirdParagraph">TOGGLE</button>
+        <div id="thirdParagraph">
+            <p>This text's visibility can be toggled!</p>
+        </div>
+    </div>
+    
+    <div id="divTwo">
+        <h1>Slider Demonstration</h1>
+        <button id="sliderButton">SLIDE</button>
+        <div id="sliderDiv">THIS WILL SLIDE</div>
+    </div>
+
+    <div id="divThree">
+        <h1>Animation Demonstration</h1>
+        <button id="animateButtonLeft">LEFT</button>
+        <button id="animateButtonSmall">SMALL</button>
+        <button id="animateButtonBig">BIG</button>
+        <div id="animateDiv">This box will be animated</div>
+    </div>
+</body>
+</html>
