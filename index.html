@@ -44,6 +44,16 @@
             $("#getContentButtonHTML").click(function(){
                 alert($("#demoText").html())
             });
+
+            $("#getName").click(function(){
+                alert($("#name").val())
+            });
+            $("#getAge").click(function(){
+                alert($("#age").val())
+            });
+            $("#getCity").click(function(){
+                alert($("#city").val())
+            });
         });
     </script>
 </head>
@@ -88,5 +98,21 @@
         <button id="getContentButtonText">TEXT</button>
         <button id="getContentButtonHTML">HTML</button>
     </div>
+
+    <div id="divFive">
+        <h1>Get Content Value Demonstration</h1>
+        <p>The buttons below will get the value that was input into their respective fields</p>
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="city" placeholder="City">
+
+        <div>
+            <button id="getName">GetName</button>
+            <button id="getAge">GetAge</button>
+            <button id="getCity">GetCity</button>
+        </div>
+
+    </div>
+
 </body>
 </html>
