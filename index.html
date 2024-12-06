@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- src is found under releases.jquery.com -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -35,6 +36,13 @@
                     height: '350px',
                     width: '300px'
                 })
+            });
+
+            $("#getContentButtonText").click(function(){
+                alert($("#demoText").text())
+            });
+            $("#getContentButtonHTML").click(function(){
+                alert($("#demoText").html())
             });
         });
     </script>
@@ -67,7 +75,18 @@
         <button id="animateButtonLeft">LEFT</button>
         <button id="animateButtonSmall">SMALL</button>
         <button id="animateButtonBig">BIG</button>
-        <div id="animateDiv">This box will be animated</div>
+        <div id="animateDivContainer">
+            <div id="animateDiv">This box will be animated</div>
+        </div>
+        
+    </div>
+
+    <div id="divFour">
+        <h1>Get Content Demonstration</h1>
+        <p id="demoText"><em>Demo Text</em>. This is another <strong>Demo Text</strong></p>
+        <p>Click the button below to get the text content or the HTML content of the above line</p>
+        <button id="getContentButtonText">TEXT</button>
+        <button id="getContentButtonHTML">HTML</button>
     </div>
 </body>
 </html>

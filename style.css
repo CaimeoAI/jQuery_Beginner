@@ -32,10 +32,15 @@ button:hover{
     background-color: grey;
 }
 
-#divOne,#divTwo, #divThree{
+#divOne,#divTwo, #divThree, #divFour{
     width: 50vw;
     padding: 1em;
     margin: 2em;
+}
+
+#animateDivContainer {
+    padding: 100px 0px;
+    margin-bottom: 200px;
 }
 
 #animateDiv {
@@ -49,4 +54,10 @@ button:hover{
     text-align: center;
     position: absolute;
     background-color: red;
+}
+
+#demoText {
+    background-color: black;
+    color: white;
+    font-size: 22px;
 }
